@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<title>Contact Us - Zaxo Roleplay App</title>
+		<style>
+				/* Add CSS for the purple box with rounded corners and Comic Sans font */
+				body {
+						background: url('https://tikkurila.com/sites/default/files/styles/thumbnail_800_auto/public/color_resources/%23454D55.png?itok=7FefdIYa') center/cover no-repeat;
+				}
+				.container {
+						width: 60%;
+						margin: 0 auto;
+						padding: 20px;
+						background-color: #7e61ab; /* Updated color code */
+						border-radius: 15px;
+				}
+				h1 {
+						font-family: 'Comic Sans MS', cursive;
+				}
+				/* Add CSS for the button */
+				input[type="submit"] {
+						background-color: #7289DA;
+						color: white;
+						border: none;
+						border-radius: 5px;
+						padding: 10px 20px;
+						cursor: pointer;
+				}
+		</style>
+</head>
+<body>
+		<div class="container">
+				<h1>Contact Us</h1>
+				<form action="submit_form.php" method="post">
+						<label for="email">Your Email:</label>
+						<input type="email" id="email" name="email" required><br><br>
+						<label for="problem">Describe Your Problem:</label><br>
+						<textarea id="problem" name="problem" rows="4" cols="50" required></textarea><br><br>
+						<input type="submit" value="Submit">
+				</form>
+		</div>
+</body>
+</html>

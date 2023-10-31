@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<title>Zaxo - Roleplay App</title>
+		<style>
+				body {
+						background: url('https://tikkurila.com/sites/default/files/styles/thumbnail_800_auto/public/color_resources/%23454D55.png?itok=7FefdIYa') no-repeat center center fixed;
+						background-size: cover;
+						color: #000; /* Black text */
+						text-align: center;
+						font-family: 'Comic Sans MS', cursive;
+				}
+
+				#container {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						margin: 50px auto;
+				}
+
+				#header {
+						font-size: 36px; /* Bigger text */
+						font-weight: bold; /* Bolder text */
+						margin-bottom: 20px;
+						background: #7289DA; /* Purple box */
+						color: #000; /* Black text inside the box */
+						padding: 10px 0; /* Padding inside the box */
+						border-radius: 10px; /* Rounded corners */
+				}
+
+				.button {
+						background: #7289DA;
+						color: #000; /* Black text for buttons */
+						padding: 10px 20px;
+						border: none;
+						border-radius: 5px; /* Rounded corners */
+						cursor: pointer;
+						font-size: 20px; /* Bigger text for buttons */
+						font-weight: bold; /* Bolder text for buttons */
+						margin: 10px;
+				}
+
+				.button:hover {
+						background: #6777a9;
+				}
+
+				.bubble {
+						background: #7289DA;
+						color: #000; /* Black text inside the bubble */
+						padding: 10px;
+						border-radius: 10px; /* Rounded corners */
+				}
+
+				.dropdown-content {
+						display: none;
+						background-color: #7289DA;
+						color: #000; /* Black text inside dropdown */
+						padding: 10px;
+						border-radius: 10px; /* Rounded corners */
+						text-align: left;
+				}
+
+				.dropdown-button {
+						display: block;
+						margin: 10px;
+						cursor: pointer;
+				}
+
+				#moreAboutZaxo {
+						display: none;
+				}
+
+				#descMascot {
+						font-size: 24px; /* Bigger text */
+						font-weight: bold; /* Bolder text */
+						margin-top: 50px;
+						background: #7289DA; /* Purple box */
+						color: #000; /* Black text inside the box */
+						padding: 10px;
+						border-radius: 10px; /* Rounded corners */
+				}
+		</style>
+</head>
+<body>
+		<div id="container">
+				<div id="header">
+						Welcome to Zaxo - The Roleplay App
+				</div>
+				<button class="button" id="moreButton">More about Zaxo</button>
+				<div id="moreAboutZaxo" class="bubble">
+						We will shall apply all we can! If you have recommendations and anything want to be requested just email us about it and we will try our best! This project is still in work of project as it may not be decent, though there will be updates throughout the process! We will try add themes too as well! For the months! Just for the thrill.
+				</div>
+				<div id="descMascot">
+						We created Zaxo because we believe in the power of creativity and community.
+				</div>
+				<button class="button" id="donateButton">Donate</button>
+				<div id="donateText" class="bubble" style="display: none;">Coming soon</div>
+				<button class="button" id="contactButton">Contact Us</button> <!-- "Contact Us" button at the bottom -->
+		</div>
+		<script>
+				var moreButton = document.getElementById("moreButton");
+				var moreAboutZaxo = document.getElementById("moreAboutZaxo");
+				var donateButton = document.getElementById("donateButton");
+				var donateText = document.getElementById("donateText");
+
+				moreButton.addEventListener("click", function() {
+						if (moreAboutZaxo.style.display === "block") {
+								moreAboutZaxo.style.display = "none";
+						} else {
+								moreAboutZaxo.style.display = "block";
+						}
+				});
+
+				donateButton.addEventListener("click", function() {
+						if (donateText.style.display === "block") {
+								donateText.style.display = "none";
+						} else {
+								donateText.style.display = "block";
+						}
+				});document.getElementById("contactButton").addEventListener("click", function() {
+					window.location.href = "contact.html"; // Redirect to the contact form page
+			});
+		</script>
+</body>
+</html>
+
